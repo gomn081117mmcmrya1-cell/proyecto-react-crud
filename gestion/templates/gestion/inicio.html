@@ -1,0 +1,13 @@
+{% extends 'gestion/base.html' %}
+
+{% block titulo %}Inicio - Mi Tienda{% endblock %}
+
+{% block contenido %}
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm border text-center">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold text-primary">¡Bienvenido a Mi Tienda!</h1>
+        <p class="fs-5 text-muted">Esta vista utiliza herencia de plantillas con Bootstrap 5.</p>
+        <a class="btn btn-primary btn-lg mt-3" href="{% url 'lista_articulos' %}">Ver catálogo de artículos</a>
+    </div>
+</div>
+{% endblock %}

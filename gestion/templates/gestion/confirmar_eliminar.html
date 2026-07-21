@@ -1,0 +1,25 @@
+{% extends 'gestion/base.html' %}
+
+{% block titulo %}Confirmar Eliminación{% endblock %}
+
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <div class="card border-danger shadow-sm">
+            <div class="card-header bg-danger text-white">
+                <h4 class="mb-0">⚠️ Confirmar Eliminación</h4>
+            </div>
+            <div class="card-body py-4">
+                <p class="fs-5">¿Estás seguro de que deseas eliminar el artículo <strong>"{{ articulo.nombre }}"</strong>?</p>
+                <p class="text-muted small">Esta acción no se puede deshacer.</p>
+
+                <form method="POST" class="mt-4">
+                    {% csrf_token %}
+                    <a href="{% url 'lista_articulos' %}" class="btn btn-secondary me-2">Cancelar</a>
+                    <button type="submit" class="btn btn-danger">Sí, Eliminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
