@@ -1,4 +1,4 @@
-Esta es la version de Maria.
+Esta es la version de Juan.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
